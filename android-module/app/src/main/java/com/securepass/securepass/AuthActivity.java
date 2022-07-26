@@ -60,12 +60,7 @@ public class AuthActivity extends FlutterActivity {
     private String passportNumber ="";
     private String dateofbirth ="";
     private String dateofexpiry ="";
-
     private String photo64;
-
-
-
-
     private boolean passportNumberFromIntent = false;
     private boolean encodePhotoToBase64 = false;
     private View mainLayout;
@@ -112,8 +107,6 @@ public class AuthActivity extends FlutterActivity {
 
         mainLayout = findViewById(R.id.main_layout);
         loadingLayout = findViewById(R.id.loading_layout);
-
-
 
 
     }
