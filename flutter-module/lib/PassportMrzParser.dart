@@ -13,7 +13,7 @@ class PassportMrzParser {
     String mrzBirthDate = mrzLine2.substring(13, 19);
     String mrzExpiryDate = mrzLine2.substring(21, 27);
     String birthDate = formatter.formatBirthDate(mrzBirthDate);
-    String expiryDate = formatter.formatBirthDate(mrzExpiryDate);
+    String expiryDate = formatter.formatExpiryDate(mrzExpiryDate);
     ChipAuthenticationData chipAuthenticationData =
         ChipAuthenticationData(passportNumber, birthDate, expiryDate);
 
